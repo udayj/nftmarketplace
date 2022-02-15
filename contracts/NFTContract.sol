@@ -19,11 +19,11 @@ contract NFTContract is ERC721URIStorage {
         return "";
     }
 
-    function createNewToken() public returns(uint){
+    function createNewToken(string calldata tokenURI) public returns(uint){
 
         uint currentId = tokenCounter;
         _safeMint(msg.sender, currentId);
-        
+        _setTokenURI(currentId,tokenURI);
         tokenCounter++;
         return tokenCounter;
     }

@@ -1,7 +1,7 @@
 Basic NFT Marketplace
 
 1. Central market that keeps track of items to be sold
-2. Each item has (creator, seller, buyer, price, nft token contract address, token id, item id, royalty_enabled, royalty amount)
+2. Each item has (creator, seller, price, nft token contract address, token id, item id, royalty_enabled, royalty amount)
 3. Marketplace allows - List item for sale
 4. Marketplace allows - Buy item from marketplace
 5. Basic stats - owner of an item, number sold, number unsold, most sold, items owned by an address, items sold by an address
@@ -11,5 +11,6 @@ Basic NFT Marketplace
 9. Lazy minting - first buyer mints the NFT -> pays the gas fees
 10. Buying with other tokens (like USDC, MATIC, UNI, etc.) -> get price from Chainlink
 11. Deploy upgradeable Marketplace contract
+12. Allow resetting price of an NFT
 
-(Inspired by Nader Dabit's NFT Marketplace and extending that concept)
+(Inspired by Nader Dabit's NFT Marketplace and extending the idea)
